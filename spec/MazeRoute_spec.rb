@@ -1,6 +1,6 @@
-require './Maze_Route.rb'
-require './Maze_Cell.rb'
-require './UninitializedObjectError.rb'
+require './lib/Maze_Route.rb'
+require './lib/Maze_Cell.rb'
+require './lib/UninitializedObjectError.rb'
 
 describe MazeRoute do
 

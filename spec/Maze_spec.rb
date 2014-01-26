@@ -1,4 +1,4 @@
-require './Maze.rb'
+require './lib/Maze.rb'
 
 describe Maze do
 

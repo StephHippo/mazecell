@@ -1,4 +1,4 @@
-require './Maze_Cell.rb'
+require './lib/Maze_Cell.rb'
 
 describe MazeCell do
 
