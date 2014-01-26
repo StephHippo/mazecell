@@ -1,0 +1,828 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+	<title>Class: Maze</title>
+
+	<link rel="stylesheet" href="./rdoc.css" type="text/css" media="screen" />
+
+	<script src="./js/jquery.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/thickbox-compressed.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/quicksearch.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/darkfish.js" type="text/javascript"
+		charset="utf-8"></script>
+
+</head>
+<body class="class">
+
+	<div id="metadata">
+		<div id="home-metadata">
+			<div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="./index.html">Home</a>
+          <a href="./index.html#classes">Classes</a>
+          <a href="./index.html#methods">Methods</a>
+        </h3>
+			</div>
+		</div>
+
+		<div id="file-metadata">
+			<div id="file-list-section" class="section">
+				<h3 class="section-header">In Files</h3>
+				<div class="section-body">
+					<ul>
+					
+						<li><a href="./Maze_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+							class="thickbox" title="Maze.rb">Maze.rb</a></li>
+					
+					</ul>
+				</div>
+			</div>
+
+			
+		</div>
+
+		<div id="class-metadata">
+
+			<!-- Parent Class -->
+			
+			<div id="parent-class-section" class="section">
+				<h3 class="section-header">Parent</h3>
+				
+				<p class="link">Object</p>
+				
+			</div>
+			
+
+			<!-- Namespace Contents -->
+			
+
+			<!-- Method Quickref -->
+			
+			<div id="method-list-section" class="section">
+				<h3 class="section-header">Methods</h3>
+				<ul class="link-list">
+					
+					<li><a href="#method-c-new">::new</a></li>
+					
+					<li><a href="#method-i-add_cells">#add_cells</a></li>
+					
+					<li><a href="#method-i-add_maze_cell_to_route_cells">#add_maze_cell_to_route_cells</a></li>
+					
+					<li><a href="#method-i-add_to_sum">#add_to_sum</a></li>
+					
+					<li><a href="#method-i-average_exit_time">#average_exit_time</a></li>
+					
+					<li><a href="#method-i-build_string">#build_string</a></li>
+					
+					<li><a href="#method-i-can_continue">#can_continue</a></li>
+					
+					<li><a href="#method-i-find_route">#find_route</a></li>
+					
+					<li><a href="#method-i-first_passage">#first_passage</a></li>
+					
+					<li><a href="#method-i-greedy_passage">#greedy_passage</a></li>
+					
+					<li><a href="#method-i-random_passage">#random_passage</a></li>
+					
+					<li><a href="#method-i-route_first">#route_first</a></li>
+					
+					<li><a href="#method-i-route_greedy">#route_greedy</a></li>
+					
+					<li><a href="#method-i-route_random">#route_random</a></li>
+					
+					<li><a href="#method-i-to_s">#to_s</a></li>
+					
+				</ul>
+			</div>
+			
+
+			<!-- Included Modules -->
+			
+			<div id="includes-section" class="section">
+				<h3 class="section-header">Included Modules</h3>
+				<ul class="link-list">
+				
+				
+					<li><a class="include" href="Requires_Valid_Collection.html">Requires_Valid_Collection</a></li>
+				
+				
+				</ul>
+			</div>
+			
+		</div>
+
+		<div id="project-metadata">
+			
+			
+			<div id="fileindex-section" class="section project-section">
+				<h3 class="section-header">Files</h3>
+				<ul>
+				
+					<li class="file"><a href="./Makefile.html">Makefile</a></li>
+				
+				</ul>
+			</div>
+			
+
+			<div id="classindex-section" class="section project-section">
+				<h3 class="section-header">Class Index
+					<span class="search-toggle"><img src="./images/find.png"
+						height="16" width="16" alt="[+]"
+						title="show/hide quicksearch" /></span></h3>
+				<form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+				<fieldset>
+					<legend>Quicksearch</legend>
+					<input type="text" name="quicksearch" value=""
+						class="quicksearch-field" />
+				</fieldset>
+				</form>
+
+				<ul class="link-list">
+				
+					<li><a href="./MazeCell.html">MazeCell</a></li>
+				
+					<li><a href="./MazeCell/Status.html">MazeCell::Status</a></li>
+				
+					<li><a href="./Fixnum.html">Fixnum</a></li>
+				
+					<li><a href="./Maze.html">Maze</a></li>
+				
+					<li><a href="./MazeRoute.html">MazeRoute</a></li>
+				
+					<li><a href="./Requires_Valid_Collection.html">Requires_Valid_Collection</a></li>
+				
+					<li><a href="./UninitializedObjectError.html">UninitializedObjectError</a></li>
+				
+				</ul>
+				<div id="no-class-search-results" style="display: none;">No matching classes.</div>
+			</div>
+
+			
+		</div>
+	</div>
+
+	<div id="documentation">
+		<h1 class="class">Maze</h1>
+
+		<div id="description">
+			
+		</div>
+
+		<!-- Constants -->
+		
+
+		<!-- Attributes -->
+		
+		<div id="attribute-method-details" class="method-section section">
+			<h3 class="section-header">Attributes</h3>
+
+			
+			<div id="valid-attribute-method" class="method-detail">
+				<a name="valid"></a>
+				
+				<a name="valid="></a>
+				
+				<div class="method-heading attribute-method-heading">
+					<span class="method-name">valid</span><span
+						class="attribute-access-type">[RW]</span>
+				</div>
+
+				<div class="method-description">
+				
+				
+				
+				</div>
+			</div>
+			
+		</div>
+		
+
+		<!-- Methods -->
+		
+		<div id="public-class-method-details" class="method-section section">
+			<h3 class="section-header">Public Class Methods</h3>
+
+		
+			<div id="new-method" class="method-detail ">
+				<a name="method-c-new"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">new</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="new-source">
+<pre>
+    <span class="ruby-comment cmt"># File Maze.rb, line 14</span>
+14:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">initialize</span>()
+15:     <span class="ruby-ivar">@cells</span> = []
+16:     <span class="ruby-ivar">@valid</span> = <span class="ruby-keyword kw">false</span>
+17:     <span class="ruby-ivar">@error</span> = <span class="ruby-constant">UninitializedObjectError</span>.<span class="ruby-identifier">new</span>
+18:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+		<div id="public-instance-method-details" class="method-section section">
+			<h3 class="section-header">Public Instance Methods</h3>
+
+		
+			<div id="add-cells-method" class="method-detail ">
+				<a name="method-i-add_cells"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">add_cells</span><span
+						class="method-args">(cells)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+adds the given list of cells to the maze and makes it valid
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="add-cells-source">
+<pre>
+    <span class="ruby-comment cmt"># File Maze.rb, line 21</span>
+21:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">add_cells</span>(<span class="ruby-identifier">cells</span>)
+22:     <span class="ruby-identifier">add_members_to_collection</span>(<span class="ruby-identifier">cells</span>) {<span class="ruby-operator">|</span><span class="ruby-identifier">collection</span><span class="ruby-operator">|</span> <span class="ruby-ivar">@cells</span> = <span class="ruby-identifier">collection</span> }
+23:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="add-to-sum-method" class="method-detail ">
+				<a name="method-i-add_to_sum"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">add_to_sum</span><span
+						class="method-args">(time_traveled, sum)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="add-to-sum-source">
+<pre>
+    <span class="ruby-comment cmt"># File Maze.rb, line 77</span>
+77:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">add_to_sum</span>(<span class="ruby-identifier">time_traveled</span>, <span class="ruby-identifier">sum</span>)
+78:     <span class="ruby-keyword kw">return</span> <span class="ruby-constant">Fixnum</span>.<span class="ruby-identifier">max_value</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">time_traveled</span> <span class="ruby-operator">&gt;=</span> <span class="ruby-constant">Fixnum</span>.<span class="ruby-identifier">max_value</span> <span class="ruby-operator">||</span> <span class="ruby-identifier">sum</span> <span class="ruby-operator">&gt;=</span> <span class="ruby-constant">Fixnum</span>.<span class="ruby-identifier">max_value</span>
+79:     <span class="ruby-identifier">sum</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">time_traveled</span>
+80:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="average-exit-time-method" class="method-detail ">
+				<a name="method-i-average_exit_time"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">average_exit_time</span><span
+						class="method-args">(exitCell)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+finds average travel time for a route
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="average-exit-time-source">
+<pre>
+    <span class="ruby-comment cmt"># File Maze.rb, line 56</span>
+56:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">average_exit_time</span>(<span class="ruby-identifier">exitCell</span>)
+57:     <span class="ruby-identifier">error</span> = <span class="ruby-constant">UninitializedObjectError</span>.<span class="ruby-identifier">new</span>
+58:     <span class="ruby-identifier">error</span>.<span class="ruby-identifier">check_initialized</span>(<span class="ruby-keyword kw">self</span>)
+59:     <span class="ruby-identifier">sum</span> = <span class="ruby-value">0.0</span>
+60:     <span class="ruby-identifier">average</span> = <span class="ruby-value">0.0</span>
+61:     <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@cells</span>.<span class="ruby-identifier">include?</span> <span class="ruby-identifier">exitCell</span>
+62:       <span class="ruby-identifier">cells</span> = <span class="ruby-ivar">@cells</span> <span class="ruby-operator">-</span> [<span class="ruby-identifier">exitCell</span>]
+63: 
+64:       <span class="ruby-identifier">cells</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">cell</span><span class="ruby-operator">|</span>
+65:         <span class="ruby-identifier">route</span> = <span class="ruby-keyword kw">yield</span> <span class="ruby-identifier">cell</span>, <span class="ruby-identifier">exitCell</span>
+66:         <span class="ruby-identifier">time_traveled</span> = <span class="ruby-identifier">route</span>.<span class="ruby-identifier">travel_time</span>
+67:         <span class="ruby-identifier">sum</span> = <span class="ruby-identifier">add_to_sum</span>(<span class="ruby-identifier">time_traveled</span>, <span class="ruby-identifier">sum</span>)
+68:       <span class="ruby-keyword kw">end</span>
+69: 
+70:       <span class="ruby-identifier">average</span> = <span class="ruby-identifier">sum</span> <span class="ruby-operator">/</span> <span class="ruby-identifier">cells</span>.<span class="ruby-identifier">length</span>
+71:     <span class="ruby-keyword kw">else</span>
+72:       <span class="ruby-keyword kw">return</span> <span class="ruby-constant">Fixnum</span>.<span class="ruby-identifier">max_value</span>
+73:     <span class="ruby-keyword kw">end</span>
+74:     <span class="ruby-identifier">average</span>
+75:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="route-first-method" class="method-detail ">
+				<a name="method-i-route_first"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">route_first</span><span
+						class="method-args">(initialCell, exitCell = nil)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+arbitrarily takes the first passage each time
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="route-first-source">
+<pre>
+    <span class="ruby-comment cmt"># File Maze.rb, line 37</span>
+37:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">route_first</span>(<span class="ruby-identifier">initialCell</span>, <span class="ruby-identifier">exitCell</span> = <span class="ruby-keyword kw">nil</span>)
+38:     <span class="ruby-identifier">route</span> = <span class="ruby-identifier">find_route</span>(<span class="ruby-identifier">initialCell</span>, <span class="ruby-identifier">exitCell</span>) { <span class="ruby-operator">|</span><span class="ruby-identifier">arg</span><span class="ruby-operator">|</span> <span class="ruby-identifier">first_passage</span>(<span class="ruby-identifier">arg</span>) }
+39:     <span class="ruby-identifier">route</span>
+40:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="route-greedy-method" class="method-detail ">
+				<a name="method-i-route_greedy"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">route_greedy</span><span
+						class="method-args">(initialCell, exitCell = nil)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+takes lowest passage each time
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="route-greedy-source">
+<pre>
+    <span class="ruby-comment cmt"># File Maze.rb, line 50</span>
+50:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">route_greedy</span>(<span class="ruby-identifier">initialCell</span>, <span class="ruby-identifier">exitCell</span> = <span class="ruby-keyword kw">nil</span>)
+51:     <span class="ruby-identifier">route</span> = <span class="ruby-identifier">find_route</span>(<span class="ruby-identifier">initialCell</span>, <span class="ruby-identifier">exitCell</span>) {<span class="ruby-operator">|</span><span class="ruby-identifier">arg</span><span class="ruby-operator">|</span> <span class="ruby-identifier">greedy_passage</span>(<span class="ruby-identifier">arg</span>)}
+52:     <span class="ruby-identifier">route</span>
+53:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="route-random-method" class="method-detail ">
+				<a name="method-i-route_random"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">route_random</span><span
+						class="method-args">(initialCell, exitCell = nil)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+takes a random passage each time
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="route-random-source">
+<pre>
+    <span class="ruby-comment cmt"># File Maze.rb, line 43</span>
+43:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">route_random</span>(<span class="ruby-identifier">initialCell</span>, <span class="ruby-identifier">exitCell</span> = <span class="ruby-keyword kw">nil</span>)
+44:     <span class="ruby-identifier">random</span> = <span class="ruby-constant">Random</span>.<span class="ruby-identifier">new</span>
+45:     <span class="ruby-identifier">route</span> = <span class="ruby-identifier">find_route</span>(<span class="ruby-identifier">initialCell</span>, <span class="ruby-identifier">exitCell</span>) { <span class="ruby-operator">|</span><span class="ruby-identifier">arg</span><span class="ruby-operator">|</span> <span class="ruby-identifier">random_passage</span>(<span class="ruby-identifier">arg</span>)}
+46:     <span class="ruby-identifier">route</span>
+47:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="to-s-method" class="method-detail ">
+				<a name="method-i-to_s"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">to_s</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+returns a human readable representation of this maze
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="to-s-source">
+<pre>
+    <span class="ruby-comment cmt"># File Maze.rb, line 26</span>
+26:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">to_s</span>()
+27:     <span class="ruby-identifier">str</span> = <span class="ruby-value str">''</span>
+28:     <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@valid</span>
+29:       <span class="ruby-ivar">@cells</span>.<span class="ruby-identifier">each</span> {<span class="ruby-operator">|</span><span class="ruby-identifier">cell</span><span class="ruby-operator">|</span> <span class="ruby-identifier">str</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">build_string</span>(<span class="ruby-identifier">cell</span>)}
+30:       <span class="ruby-identifier">str</span>
+31:     <span class="ruby-keyword kw">else</span>
+32:       <span class="ruby-value str">&quot;Uninitialized Maze&quot;</span>
+33:     <span class="ruby-keyword kw">end</span>
+34:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+		<div id="private-instance-method-details" class="method-section section">
+			<h3 class="section-header">Private Instance Methods</h3>
+
+		
+			<div id="add-maze-cell-to-route-cells-method" class="method-detail ">
+				<a name="method-i-add_maze_cell_to_route_cells"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">add_maze_cell_to_route_cells</span><span
+						class="method-args">(cell, routeCells)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+adds the cell to the routeCells if it is in the maze
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="add-maze-cell-to-route-cells-source">
+<pre>
+     <span class="ruby-comment cmt"># File Maze.rb, line 128</span>
+128:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">add_maze_cell_to_route_cells</span>(<span class="ruby-identifier">cell</span>, <span class="ruby-identifier">routeCells</span>)
+129:     (<span class="ruby-ivar">@cells</span>.<span class="ruby-identifier">include?</span> <span class="ruby-identifier">cell</span>) <span class="ruby-operator">?</span> <span class="ruby-identifier">routeCells</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">cell</span> <span class="ruby-operator">:</span> []
+130:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="build-string-method" class="method-detail ">
+				<a name="method-i-build_string"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">build_string</span><span
+						class="method-args">(cell)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="build-string-source">
+<pre>
+     <span class="ruby-comment cmt"># File Maze.rb, line 99</span>
+ 99:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">build_string</span>(<span class="ruby-identifier">cell</span>)
+100:     <span class="ruby-identifier">str</span> = <span class="ruby-value str">''</span>
+101:     <span class="ruby-identifier">neighbors</span> = <span class="ruby-identifier">cell</span>.<span class="ruby-identifier">connected_cells</span>
+102:     <span class="ruby-identifier">neighbors</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">neighbor</span><span class="ruby-operator">|</span>
+103:       <span class="ruby-identifier">str</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-node">&quot;#{cell.to_s} can travel to #{neighbor.to_s} in #{cell.passage_time_to(neighbor)} seconds. \n&quot;</span>
+104:     <span class="ruby-keyword kw">end</span>
+105:     <span class="ruby-identifier">str</span>
+106:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="can-continue-method" class="method-detail ">
+				<a name="method-i-can_continue"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">can_continue</span><span
+						class="method-args">(cell, routeCells, exitcell= nil)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+do not continue if the cell is a dead end, has been visited before, or the
+cell is not in the maze
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="can-continue-source">
+<pre>
+     <span class="ruby-comment cmt"># File Maze.rb, line 133</span>
+133:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">can_continue</span>(<span class="ruby-identifier">cell</span>, <span class="ruby-identifier">routeCells</span>, <span class="ruby-identifier">exitcell</span>= <span class="ruby-keyword kw">nil</span>)
+134:     <span class="ruby-identifier">deadEnd</span> = <span class="ruby-identifier">cell</span>.<span class="ruby-identifier">is_dead_end?</span>
+135:     <span class="ruby-identifier">looping</span> = <span class="ruby-identifier">routeCells</span>.<span class="ruby-identifier">include?</span> <span class="ruby-identifier">cell</span>
+136:     <span class="ruby-identifier">exitcell</span>.<span class="ruby-identifier">nil?</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">reachedexit</span> = <span class="ruby-identifier">exitcell</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">cell</span> <span class="ruby-operator">:</span> <span class="ruby-identifier">reachedexit</span> = <span class="ruby-keyword kw">false</span>
+137:     <span class="ruby-operator">!</span><span class="ruby-identifier">looping</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-operator">!</span><span class="ruby-identifier">deadEnd</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-operator">!</span><span class="ruby-identifier">routeCells</span>.<span class="ruby-identifier">empty?</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-operator">!</span><span class="ruby-identifier">reachedexit</span>
+138:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="find-route-method" class="method-detail ">
+				<a name="method-i-find_route"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">find_route</span><span
+						class="method-args">(initialCell, exitcell = nil)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="find-route-source">
+<pre>
+     <span class="ruby-comment cmt"># File Maze.rb, line 108</span>
+108:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">find_route</span>(<span class="ruby-identifier">initialCell</span>, <span class="ruby-identifier">exitcell</span> = <span class="ruby-keyword kw">nil</span>)
+109:     <span class="ruby-ivar">@error</span>.<span class="ruby-identifier">check_initialized</span>(<span class="ruby-keyword kw">self</span>)
+110: 
+111:     <span class="ruby-identifier">cell</span> = <span class="ruby-identifier">initialCell</span>
+112:     <span class="ruby-identifier">routeCells</span> = []
+113: 
+114:     <span class="ruby-keyword kw">while</span> <span class="ruby-keyword kw">true</span>
+115:       <span class="ruby-identifier">routeCells</span> = <span class="ruby-identifier">add_maze_cell_to_route_cells</span>(<span class="ruby-identifier">cell</span>, <span class="ruby-identifier">routeCells</span>)
+116:       <span class="ruby-identifier">cell</span> = <span class="ruby-keyword kw">yield</span> <span class="ruby-identifier">cell</span>
+117:       <span class="ruby-keyword kw">break</span> <span class="ruby-keyword kw">unless</span> <span class="ruby-identifier">can_continue</span>(<span class="ruby-identifier">cell</span>, <span class="ruby-identifier">routeCells</span>, <span class="ruby-identifier">exitcell</span>)
+118:     <span class="ruby-keyword kw">end</span>
+119: 
+120:     <span class="ruby-identifier">routeCells</span> = <span class="ruby-identifier">add_maze_cell_to_route_cells</span>(<span class="ruby-identifier">cell</span>, <span class="ruby-identifier">routeCells</span>)
+121: 
+122:     <span class="ruby-identifier">route</span> = <span class="ruby-constant">MazeRoute</span>.<span class="ruby-identifier">new</span>
+123:     <span class="ruby-identifier">route</span>.<span class="ruby-identifier">add_cells</span>(<span class="ruby-identifier">routeCells</span>)
+124:     <span class="ruby-identifier">route</span>
+125:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="first-passage-method" class="method-detail ">
+				<a name="method-i-first_passage"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">first_passage</span><span
+						class="method-args">(cell)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="first-passage-source">
+<pre>
+    <span class="ruby-comment cmt"># File Maze.rb, line 91</span>
+91:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">first_passage</span>(<span class="ruby-identifier">cell</span>)
+92:     <span class="ruby-identifier">cell</span>.<span class="ruby-identifier">connected_cells</span>[<span class="ruby-value">0</span>]
+93:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="greedy-passage-method" class="method-detail ">
+				<a name="method-i-greedy_passage"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">greedy_passage</span><span
+						class="method-args">(cell)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="greedy-passage-source">
+<pre>
+    <span class="ruby-comment cmt"># File Maze.rb, line 84</span>
+84:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">greedy_passage</span>(<span class="ruby-identifier">cell</span>)
+85:     <span class="ruby-identifier">passages</span> = <span class="ruby-identifier">cell</span>.<span class="ruby-identifier">passages</span>
+86:     <span class="ruby-identifier">minpassage</span> = <span class="ruby-identifier">cell</span>.<span class="ruby-identifier">passages</span>.<span class="ruby-identifier">values</span>.<span class="ruby-identifier">min</span>
+87:     <span class="ruby-identifier">temp</span> = <span class="ruby-identifier">passages</span>.<span class="ruby-identifier">select</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">key</span>, <span class="ruby-identifier">value</span><span class="ruby-operator">|</span> <span class="ruby-identifier">passages</span>[<span class="ruby-identifier">key</span>] <span class="ruby-operator">==</span> <span class="ruby-identifier">minpassage</span>}
+88:     <span class="ruby-identifier">temp</span>.<span class="ruby-identifier">keys</span>.<span class="ruby-identifier">first</span>
+89:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="random-passage-method" class="method-detail ">
+				<a name="method-i-random_passage"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">random_passage</span><span
+						class="method-args">(cell)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="random-passage-source">
+<pre>
+    <span class="ruby-comment cmt"># File Maze.rb, line 95</span>
+95:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">random_passage</span>(<span class="ruby-identifier">cell</span>)
+96:     <span class="ruby-identifier">cell</span>.<span class="ruby-identifier">connected_cells</span>.<span class="ruby-identifier">sample</span>
+97:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+
+	</div>
+
+
+	<div id="rdoc-debugging-section-dump" class="debugging-section">
+	
+		<p>Disabled; run with --debug to generate this.</p>
+	
+	</div>
+
+	<div id="validator-badges">
+		<p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+		<p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+			Rdoc Generator</a> 1.1.6</small>.</p>
+	</div>
+
+</body>
+</html>
+
